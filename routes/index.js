@@ -16,4 +16,10 @@ router.get('/contact', function(req, res, next) {
   return res.render('contact', { title: 'Contact' });
 });
 
+// GET /register
+router.get('/register', function(req, res, next) {
+  return res.render('register', { title: 'Sign Up' });
+
+});
+
 module.exports = router;
