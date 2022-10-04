@@ -5,6 +5,7 @@ var session = require('express-session');
 
 var app = express();
 
+// use sessions for tracking logins
 app.use(session({
   secret: 'treehouse loves you', // used to sign the session ID cookie
   resave: true,
